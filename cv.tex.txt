@@ -1,0 +1,232 @@
+%%%%%%%%%%%%%%%%%
+% This CV created using altacv.cls
+% (v1.6.4, 13 Nov 2021) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option instead of "ragged2e,withhyper" if you want a normal photo instead of cropped to a circle
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+%% AltaCV uses the fontawesome5 and packages.
+%% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=0.8cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+
+% Change the colours if you want to
+% \definecolor{SlateGrey}{HTML}{2E2E2E}
+% \definecolor{LightGrey}{HTML}{666666}
+% \definecolor{DarkPastelRed}{HTML}{450808}
+% \definecolor{PastelRed}{HTML}{8F0D0D}
+% \definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{black}
+\colorlet{heading}{black}
+\colorlet{headingrule}{black}
+\colorlet{subheading}{black}
+\colorlet{accent}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{Elizaveta Kotelnikova}
+\tagline{Java/Kotlin backend developer}
+
+%% You can add multiple photos on the left or right
+% \photoR{2.8cm}{Globe_High}
+% \photoL{2.5cm}{Yacht_High,Suitcase_High}
+
+\personalinfo{
+  \location{St. Petersburg, Russia}
+%   \mailaddress{Åddrésş, Street, 00000 Cóuntry}
+  \email{elizaveta1408li@gmail.com}
+%\linkedin{elizavetakotelnikova}
+  \github{elizavetakotelnikova}
+  \phone{+79816999984}
+  \telegram{tg: @kotelnikova14}
+  %% You can add your own arbitrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+  %%
+  %% For services and platforms like Mastodon where there isn't a
+  %% straightforward relation between the user ID/nickname and the hyperlink,
+  %% you can use \printinfo directly e.g.
+  % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
+}
+
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.7}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+\cvsection{Work Experience}
+
+\cvevent{Kotlin Backend developer}{T-Bank}{Oct 2024 -- Ongoing}{Saint Petersburg, Russia}
+
+\begin{itemize}
+  \item Implemented backend for multiple new services, now actively used by bank employees, boosting work efficiency, measurability, and overall convenience
+  \item Migrated services' data to a centralized Data Warehouse (DWH), improving system reliability and enabling analytics of business processes
+  \item Established microservice communication and developed API integrations with existing bank infrastructure, ensuring interoperability and incorporation of newly developed services
+  \item Achieved ~70\% code coverage through integration and unit testing, reducing system defects and enhancing overall stability
+\end{itemize}
+
+\cvsection{Related Experience}
+%\cvevent{}{Dell Technologies}{}{St. Petersburg, Russia}
+\cvevent{Algorithms and data structures TA}{ITMO University}{Sep 2023 - Jan 2025}{St. Petersburg, Russia}
+
+\begin{itemize}
+  \item Designed and implemented algorithmic tasks/solutions using C++
+  \item Organized and guided multiple student groups, ensuring a structured and effective learning process
+\end{itemize}
+
+\divider
+
+\cvevent{Backend Developer}{"VK \& ITMO Mini-apps" Hackathon}{Oct 2024}{St. Petersburg, Russia}
+\begin{itemize}
+  \item In a team of three, built and deployed backend for a university application
+  \item Designed and implemented API to enable frontend interaction
+\end{itemize}
+
+\divider
+
+\cvevent{Backend Developer}{"NoLabel Competiton" Hackathon}{Jan 2024}{St. Petersburg, Russia}
+
+\textit{Prize in the "Best MVP" category}
+\begin{itemize}
+  \item Developed RESTful webservice in the team of 3 backend and 2 frontend developers
+  \item Designed database structure, used PostgreSQL to manage data, implemented Data Access Layer
+  \item Collaborated on business logic development
+  \item Worked on technical specification, ensuring all usecases are well-documented
+  \item Achieved high test coverage from writing unit and integration tests
+\end{itemize}
+
+\github{elizavetakotelnikova/Let-s-lunch-app}
+
+\divider
+\cvevent{}{Yandex IT TA Competition}{}{}
+Winner of the IT Teaching Assistant Competition 2024
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Education}
+% \cvevent{\normalsize{BSc, Software Engineering} \footnotesize{(GPA 3.3)}}{ITMO University}{Sept 2022 -- June 2026}{}
+\cvevent{\normalsize{BSc, Software Engineering}\footnotesize{ (GPA 3.8/4)}}{ITMO University}{Sept 2022 -- June 2026}{}
+
+\cvsection{Skills}
+
+\cvevent{Programming Languages}{}{}{}
+
+\cvtag{Kotlin}
+\cvtag{Java}
+\cvtag{Go}
+\cvtag{SQL}
+
+% \cvtag{JavaScript/TypeScript}
+
+\medskip
+
+\cvevent{Technologies}{}{}{}
+
+\cvtag{Spring Framework}
+\cvtag{Kafka}
+\cvtag{RabbitMQ}
+\cvtag{PostgreSQL}
+
+\cvtag{MongoDB}
+
+\medskip
+
+\cvevent{Tools}{}{}{}
+
+\cvtag{Docker}
+%\cvtag{Kubernetes}
+\cvtag{Linux}
+\cvtag{Git}
+
+\cvtag{Prometheus}
+\cvtag{Grafana}
+
+\cvtag{GitLab CI/CD}
+%\cvtag{Jenkins}
+
+
+\cvsection{Languages}
+
+\begin{itemize}
+\item English - advanced (C1)
+\item German - intermediate
+\item Russian - native
+\end{itemize}
+
+\cvsection{Projects}
+
+%\cvevent{Expenses Calculator}{}{}{}
+
+%Console application designed to help users track information about their %expenses based on categories or date range (Java)
+
+%\github{elizavetakotelnikova/ExpensesCalculator}
+
+%\divider
+
+\cvevent{UserInfoService}{}{}{}
+
+Spring-powered web-application that manages users' information (Java, Spring Framework, PostgreSQL)
+
+\github{elizavetakotelnikova/UserInfoService}
+
+%%\divider
+
+%% \cvevent{Custom programming language}{}{}{}
+
+%% In a team of four, implemented a custom programming language: Parser, %% Lexer, JIT and GC (C++, LLVM)
+
+%%\github{elizavetakotelnikova/own-prog-lang}
+
+%%\cvevent{ExpensesCalculator}{}{}{}
+
+%%Console application to summarize expenses by month/group/code. Used %%algorithms and data structures alongside OOP patterns to provide command %%handling
+
+%%\github{elizavetakotelnikova}
+
+%% Yeah I didn't spend too much time making all the
+%% spacing consistent... sorry. Use \smallskip, \medskip,
+%% \bigskip, \vspace etc to make adjustments.
+
+\end{paracol}
+
+\end{document}
